@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Dynamische und Link-Pseudoklassen</title>
+  <style>
+    a:link { color: red; }
+    a:visited { color: blue; }
+    a:hover { color: yellow; }
+    a:focus { color: black; }
+    a:active { color: lime; }
+  </style>
+</head>
+<body>
+<p><a href="#">Link auf aktive Seite</a>; gilt somit als
+  besucht (<b>:visited</b>)
+  <br><a href="nichtvorhanden.htm">Link auf nicht vorhandene
+    Seite</a>; gilt somit als nicht besucht (<b>:link</b>).</p>
+<ol>
+  <li><b>:hover</b> wird beim Überfahren der Hyperlinks mit
+  der Maus aktiv. Die Links werden gelb dargestellt.</li>
+  <li><b>:focus</b> wird beim Auswählen der Hyperlinks mit
+    der TABULATOR-Taste aktiv. Die Links werden schwarz
+    dargestellt.</li>
+  <li><b>:active</b> wird beim Aktivieren (Klicken und
+    Festhalten) der Hyperlinks aktiv. Die Links werden grün
+    dargestellt.</li>
+</ol>
+</body>
+</html>
