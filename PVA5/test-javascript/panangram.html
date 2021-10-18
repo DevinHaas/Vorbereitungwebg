@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pangram</title>
+</head>
+<body>
+<script type="text/javascript">
+    console.log(isPangram("The quick brown fox jumps over the lazy dog."));
+    function isPangram(str) {
+        let alphabet = "abcdefghijklmnopqrstuvwxyz";
+        let text = str.toLowerCase();
+        let lower = text.replaceAll(" ", "");
+
+        for(let i = 0; i < alphabet.length; i++){
+            if(lower.indexOf(alphabet[i]) === -1){
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>
